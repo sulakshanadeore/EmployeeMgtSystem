@@ -36,6 +36,8 @@ internal class Program
         emp.City = Console.ReadLine();
         Console.WriteLine("Enter country");
         emp.Country = Console.ReadLine();
+        Console.WriteLine("Enter email");
+        emp.Email = Console.ReadLine();
 
         
         Console.WriteLine($"You entered empid=  {emp.Empid}");
@@ -44,7 +46,7 @@ internal class Program
         Console.WriteLine($"Your age=  {emp.CalculatedAge}");
         Console.WriteLine($"You entered the skill name = {emp.FavColor}" );
         Console.WriteLine($"You entered the skill name = {emp.City}");
-
+        Console.WriteLine($"You entered the Email ID = {emp.Email}");
         //Bike honda = new Bike();
         //honda.AcceptBikeDetails();
         //honda.DisplayBikeDetails();

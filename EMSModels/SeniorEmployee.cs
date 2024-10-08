@@ -82,9 +82,11 @@ namespace EMSModels
         }
 
 
+        public string Email { get; set; }
 
+        //prop (tab + tab)
 
-      private string? _name;
+        private string? _name;
         public string EmpName
         {
             set {
