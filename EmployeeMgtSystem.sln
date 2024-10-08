@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectOrientedDemo", "ObjectOrientedDemo\ObjectOrientedDemo.csproj", "{099C72D1-2BA8-4FC8-8D62-BCF93A5682C0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99A20D21-4B7D-46B0-8E0B-59866D5AE3E7} = {99A20D21-4B7D-46B0-8E0B-59866D5AE3E7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMSModels", "EMSModels\EMSModels.csproj", "{99A20D21-4B7D-46B0-8E0B-59866D5AE3E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{099C72D1-2BA8-4FC8-8D62-BCF93A5682C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099C72D1-2BA8-4FC8-8D62-BCF93A5682C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099C72D1-2BA8-4FC8-8D62-BCF93A5682C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099C72D1-2BA8-4FC8-8D62-BCF93A5682C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99A20D21-4B7D-46B0-8E0B-59866D5AE3E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A20D21-4B7D-46B0-8E0B-59866D5AE3E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A20D21-4B7D-46B0-8E0B-59866D5AE3E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A20D21-4B7D-46B0-8E0B-59866D5AE3E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C84BA97F-7CDF-4689-ADB8-0D5144715AD2}
+	EndGlobalSection
+EndGlobal
