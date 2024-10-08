@@ -30,5 +30,19 @@ namespace EMSModels
 
         }
 
+        public double CalculateSalary()
+        {
+            Console.WriteLine("Enter sal");
+            _sal=Convert.ToInt32(Console.ReadLine());
+            return _sal  + (_sal*.10);
+        }
+
+        public virtual double CalculateIncentives()
+        {
+           return _sal + (_sal * 20);
+        
+        }
+
+
     }
 }

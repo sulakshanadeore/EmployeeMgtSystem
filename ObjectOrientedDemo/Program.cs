@@ -55,14 +55,26 @@ internal class Program
         //    Console.WriteLine("Check credentials");
         //}
 
-        ProjectLead lead = new ProjectLead(12, "Rima", "Mumbai", "EMS");
-        Console.WriteLine($"{lead.Empid},{lead.EmpName},{lead.City},{lead.ProjectName}");
+        //ProjectLead lead = new ProjectLead(12, "Rima", "Mumbai", "EMS");
+        //Console.WriteLine($"{lead.Empid},{lead.EmpName},{lead.City},{lead.ProjectName}");
+
+        //SeniorEmployee emp = new SeniorEmployee(12, "Gaurang", "Indore", "gaurang@gmail.com");
+        
         //Console.WriteLine($"You entered the Email ID = {emp.Email}");
         ////Bike honda = new Bike();
         //honda.AcceptBikeDetails();
         //honda.DisplayBikeDetails();
         //honda.CountBikes();
 
+        Payment p=new Payment();
+        p.Amt = 1000;
+        double amt = p.Pay();
+        Console.WriteLine(amt);
+
+        long cardno=133333333339877;
+        p.Pay(cardno, "Kotak");
+
+        p.Pay(322424, "Avinash", 1232);
 
         Console.ReadKey();
     }

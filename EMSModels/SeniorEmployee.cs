@@ -30,7 +30,7 @@ namespace EMSModels
     //}
 
 
-    public class SeniorEmployee
+    public class SeniorEmployee:Employee
     {
         //Empid--int
         //ename---string
@@ -63,7 +63,33 @@ namespace EMSModels
 
         }
 
-        
+
+        public SeniorEmployee(int empid, string ename, string city,string email):this( empid, ename, city)
+        {
+            Email= email;   
+        }
+
+
+        public new double CalculateSalary()
+        {
+            double salFromEmployee=base.CalculateSalary();
+            return salFromEmployee +1000;
+        }
+
+        //if base class method is marked virtual, then new or override both are possible.
+        public new double CalculateIncentives()
+        {
+            return 0;
+        }
+
+        //public override double CalculateIncentives()
+        //{
+
+        //    return base.CalculateIncentives() + 0;
+
+
+        //}
+
         public bool IsValid { get; set; }
 
 
