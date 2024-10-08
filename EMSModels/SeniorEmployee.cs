@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
@@ -37,7 +38,36 @@ namespace EMSModels
         //joiningdate--datetime
         //birthdate-datatime
 
-     private   int _empid;
+        public SeniorEmployee()
+        {
+                
+        }
+
+        public SeniorEmployee(int empid,string ename)
+        {
+            _empid = empid;
+            _name = ename;   
+        }
+
+        public SeniorEmployee(int empid, string ename,string city):this(empid,ename) 
+        {
+            //_empid=empid;
+            //_name = ename;
+            _city = city;
+            
+            if (empid != 0 && _name.Length > 4 && _city.Length > 4) { 
+            IsValid = true;
+            
+            
+            }
+
+        }
+
+        
+        public bool IsValid { get; set; }
+
+
+        private   int _empid;
         public int Empid
         {
             set 
@@ -81,7 +111,7 @@ namespace EMSModels
             get { return _country; }
         }
 
-
+        
         public string Email { get; set; }
 
         //prop (tab + tab)
